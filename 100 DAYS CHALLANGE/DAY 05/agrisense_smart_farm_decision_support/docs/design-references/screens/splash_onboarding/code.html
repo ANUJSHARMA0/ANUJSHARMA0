@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#eff4ff", "inverse-surface": "#27313f", "surface-tint": "#3f6653", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-primary-fixed": "#002114", "on-surface-variant": "#414844", "on-secondary-fixed-variant": "#005235", "on-primary-fixed-variant": "#274e3d", "on-secondary-container": "#00734d", "surface-variant": "#d9e3f6", "surface": "#f8f9ff", "on-surface": "#121c2a", "surface-container-high": "#dee9fc", "tertiary-fixed": "#ffdad2", "on-secondary-fixed": "#002113", "error": "#ba1a1a", "surface-container": "#e6eeff", "on-primary": "#ffffff", "inverse-primary": "#a5d0b9", "primary-fixed-dim": "#a5d0b9", "on-primary-container": "#86af99", "on-background": "#121c2a", "surface-container-highest": "#d9e3f6", "inverse-on-surface": "#eaf1ff", "primary-container": "#1b4332", "tertiary": "#500c00", "on-error-container": "#93000a", "on-error": "#ffffff", "outline": "#717973", "primary": "#012d1d", "primary-fixed": "#c1ecd4", "surface-bright": "#f8f9ff", "surface-dim": "#d0dbed", "secondary": "#006c48", "on-tertiary": "#ffffff", "secondary-fixed": "#92f7c3", "error-container": "#ffdad6", "on-tertiary-container": "#ff8364", "outline-variant": "#c1c8c2", "on-tertiary-fixed": "#3c0700", "tertiary-fixed-dim": "#ffb4a2", "tertiary-container": "#741b04", "secondary-container": "#92f7c3", "on-tertiary-fixed-variant": "#83260e", "secondary-fixed-dim": "#75daa8", "background": "#f8f9ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1rem", "gutter": "1rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased pt-safe pb-safe flex flex-col min-h-screen"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full relative overflow-hidden pb-8 px-4">
+<!-- Subtle Ambient Topographic Contour Graphic (Background) -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<svg class="w-full h-full text-secondary-fixed/40" fill="none" preserveaspectratio="none" viewbox="0 0 400 800">
+<path d="M-50,120 C80,80 150,220 450,140" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path d="M-30,280 C120,240 240,360 430,260" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M-60,420 C60,490 280,390 460,480" stroke="currentColor" stroke-width="1"></path>
+<path d="M-20,620 C140,560 210,680 440,600" stroke="currentColor" stroke-dasharray="6 3" stroke-width="2"></path>
+<path d="M0,740 C180,700 290,790 420,720" stroke="currentColor" stroke-width="1.5"></path>
+</svg>
+</div>
+<!-- Top Utilities: Language Picker Chip & Status -->
+<div class="relative z-10 flex items-center justify-between pt-2 mb-6">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">sensors</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AgTech AI 2.4</span>
+</div>
+<!-- Language Selector Pill -->
+<div class="flex items-center p-1 rounded-full bg-surface-container shadow-sm" id="lang-selector">
+<button class="lang-btn px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm transition-all" data-lang="en" type="button">
+        English
+      </button>
+<button class="lang-btn px-2.5 py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm transition-all" data-lang="hi" type="button">
+        हिन्दी
+      </button>
+<button class="lang-btn px-2.5 py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm transition-all" data-lang="pa" type="button">
+        ਪੰਜਾਬੀ
+      </button>
+</div>
+</div>
+<!-- Centered Prominent Branding -->
+<div class="relative z-10 flex flex-col items-center text-center mt-1 mb-6">
+<div class="relative w-20 h-20 mb-3 rounded-2xl bg-surface-container-lowest p-2 shadow-md flex items-center justify-center">
+<img alt="AgriSense Logo" class="w-full h-full object-contain rounded-xl" src="https://lh3.googleusercontent.com/aida/AEtjO1URzMn-QO8ENsDd64O7xXjVuipN1X9XxzktQZpCg6CfhmgNCRKy_9eUKwu1qL0FfYkg0yAyPFiLSb8S6NgL6g7Wbd9sg_YioYylID7058i4U9XzzdhpUKd2Rom6BuajAVRn4gjB-yixKqGAY0Kn6aANLeVrp8gi-7AK4Q2Z6EYMhHxn6cL2DQNRwai_qX1v2NHiV8VWdzy6jwwdB6fVTscS7fZTTPP-ZO-oYtxSksFOxScPgkAeKZ9YHz8"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-[12px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<h1 class="font-display-mobile text-display-mobile text-primary tracking-tight">AgriSense</h1>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">कृषि-सेंस</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px] leading-relaxed">
+      Understand your farm. Plan your crop. Reduce uncertainty.
+    </p>
+</div>
+<!-- Value Proposition Carousel Container -->
+<div class="relative z-10 w-full mb-6">
+<div class="relative overflow-hidden w-full min-h-[178px] rounded-2xl bg-surface-container-lowest shadow-md p-4">
+<!-- Slide 1 -->
+<div class="carousel-slide flex flex-col transition-all duration-300 transform opacity-100" id="slide-0">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[26px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-bold">Step 1 of 3</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                99% Precision
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Know Your Soil &amp; Water</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Live sensor telemetry and laboratory N-P-K nutrient profiling tailored to Indian ground tables.
+            </p>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between bg-surface-container-low rounded-xl px-3 py-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">biotech</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Soil Matrix: Optimal pH 6.8</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nitrogen: 280 kg/ha</span>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="carousel-slide hidden flex-col transition-all duration-300 transform opacity-0" id="slide-1">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[26px]" style="font-variation-settings: 'FILL' 1;">thunderstorm</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-bold">Step 2 of 3</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Radar Synced
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Understand Your Weather</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Micro-climate rain forecast and localized monsoon temperature risk models down to your village.
+            </p>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between bg-surface-container-low rounded-xl px-3 py-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">cloud</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">7-Day Outlook: Light Showers</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+2.1°C Variance</span>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="carousel-slide hidden flex-col transition-all duration-300 transform opacity-0" id="slide-2">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[26px]" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-bold">Step 3 of 3</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Mandi Linked
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Compare Crops Before Planting</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              AI scenario modeling for ₹ revenue, crop cycle duration, and current market volatility index.
+            </p>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between bg-surface-container-low rounded-xl px-3 py-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">currency_rupee</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Avg. Net Margin: +24%</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Wheat vs Mustard</span>
+</div>
+</div>
+</div>
+<!-- Carousel Dots & Manual Toggle -->
+<div class="flex items-center justify-center gap-2 mt-3">
+<button aria-label="Slide 1" class="carousel-dot w-6 h-1.5 rounded-full bg-primary-container transition-all" data-index="0" type="button"></button>
+<button aria-label="Slide 2" class="carousel-dot w-2 h-1.5 rounded-full bg-surface-variant transition-all" data-index="1" type="button"></button>
+<button aria-label="Slide 3" class="carousel-dot w-2 h-1.5 rounded-full bg-surface-variant transition-all" data-index="2" type="button"></button>
+</div>
+</div>
+<!-- Pre-Selected Demo Profile Capsule -->
+<div class="relative z-10 w-full mb-6">
+<div class="bg-surface-container rounded-2xl p-3.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Active Field Context</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate">Greater Noida, Uttar Pradesh (2.5 Acres)</span>
+</div>
+</div>
+<button class="px-2.5 py-1 text-primary font-label-sm text-label-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-1 flex-shrink-0" type="button">
+<span>Change</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Action CTA Area -->
+<div class="relative z-10 flex flex-col gap-3 w-full mt-auto">
+<!-- Primary CTA: 56dp height touch target -->
+<button class="w-full h-14 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-3 shadow-md active:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span>Get Started • Analyze Farm</span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</button>
+<!-- Secondary CTA: Explore Demo Mode -->
+<button class="w-full h-12 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-secondary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Explore Demo Mode</span>
+</button>
+</div>
+<!-- Reassurance / Trust Footer Badges -->
+<div class="relative z-10 flex items-center justify-center gap-4 mt-6 text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm">Offline First Ready</span>
+</div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">cloud_sync</span>
+<span class="font-label-sm text-label-sm">ICAR Database Sync</span>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    let currentSlide = 0;
+    const slides = [
+      document.getElementById('slide-0'),
+      document.getElementById('slide-1'),
+      document.getElementById('slide-2')
+    ];
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.remove('hidden');
+          setTimeout(() => {
+            slide.classList.remove('opacity-0');
+            slide.classList.add('opacity-100');
+          }, 10);
+        } else {
+          slide.classList.add('opacity-0');
+          slide.classList.remove('opacity-100');
+          slide.classList.add('hidden');
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.remove('w-2', 'bg-surface-variant');
+          dot.classList.add('w-6', 'bg-primary-container');
+        } else {
+          dot.classList.remove('w-6', 'bg-primary-container');
+          dot.classList.add('w-2', 'bg-surface-variant');
+        }
+      });
+      currentSlide = index;
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', function () {
+        const idx = parseInt(this.getAttribute('data-index'), 10);
+        showSlide(idx);
+      });
+    });
+
+    setInterval(() => {
+      const nextSlide = (currentSlide + 1) % slides.length;
+      showSlide(nextSlide);
+    }, 4500);
+
+    const langBtns = document.querySelectorAll('.lang-btn');
+    langBtns.forEach((btn) => {
+      btn.addEventListener('click', function () {
+        langBtns.forEach((b) => {
+          b.classList.remove('bg-primary-container', 'text-on-primary');
+          b.classList.add('text-on-surface-variant');
+        });
+        this.classList.add('bg-primary-container', 'text-on-primary');
+        this.classList.remove('text-on-surface-variant');
+      });
+    });
+  })();
+</script></main></body></html>

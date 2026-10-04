@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#eff4ff", "inverse-surface": "#27313f", "surface-tint": "#3f6653", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "on-primary-fixed": "#002114", "on-surface-variant": "#414844", "on-secondary-fixed-variant": "#005235", "on-primary-fixed-variant": "#274e3d", "on-secondary-container": "#00734d", "surface-variant": "#d9e3f6", "surface": "#f8f9ff", "on-surface": "#121c2a", "surface-container-high": "#dee9fc", "tertiary-fixed": "#ffdad2", "on-secondary-fixed": "#002113", "error": "#ba1a1a", "surface-container": "#e6eeff", "on-primary": "#ffffff", "inverse-primary": "#a5d0b9", "primary-fixed-dim": "#a5d0b9", "on-primary-container": "#86af99", "on-background": "#121c2a", "surface-container-highest": "#d9e3f6", "inverse-on-surface": "#eaf1ff", "primary-container": "#1b4332", "tertiary": "#500c00", "on-error-container": "#93000a", "on-error": "#ffffff", "outline": "#717973", "primary": "#012d1d", "primary-fixed": "#c1ecd4", "surface-bright": "#f8f9ff", "surface-dim": "#d0dbed", "secondary": "#006c48", "on-tertiary": "#ffffff", "secondary-fixed": "#92f7c3", "error-container": "#ffdad6", "on-tertiary-container": "#ff8364", "outline-variant": "#c1c8c2", "on-tertiary-fixed": "#3c0700", "tertiary-fixed-dim": "#ffb4a2", "tertiary-container": "#741b04", "secondary-container": "#92f7c3", "on-tertiary-fixed-variant": "#83260e", "secondary-fixed-dim": "#75daa8", "background": "#f8f9ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1rem", "gutter": "1rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="AgriSense Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1URzMn-QO8ENsDd64O7xXjVuipN1X9XxzktQZpCg6CfhmgNCRKy_9eUKwu1qL0FfYkg0yAyPFiLSb8S6NgL6g7Wbd9sg_YioYylID7058i4U9XzzdhpUKd2Rom6BuajAVRn4gjB-yixKqGAY0Kn6aANLeVrp8gi-7AK4Q2Z6EYMhHxn6cL2DQNRwai_qX1v2NHiV8VWdzy6jwwdB6fVTscS7fZTTPP-ZO-oYtxSksFOxScPgkAeKZ9YHz8"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">AgriSense</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Farm Setup</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Language Toggle" class="min-h-[44px] min-w-[44px] px-space-xs py-1 rounded-full bg-surface-container flex items-center justify-center text-primary font-label-md text-label-md active:scale-95 transition-transform" type="button"><span class="font-bold">अ/A</span></button><button aria-label="Notifications" class="relative min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center text-on-surface active:scale-95 transition-transform" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<div class="px-margin pt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Step 1 of 2: Field &amp; Soil Profile</span>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-secondary-container/50 px-space-xs py-0.5 rounded-full">50% Completed</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="w-1/2 h-full bg-secondary rounded-full transition-all duration-300"></div>
+</div>
+<div class="mt-space-xs flex items-center justify-between">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">Tell us about your farm</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fine-tune AgriSense AI to recommend high-yield Kharif strategies.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">agriculture</span>
+</div>
+</div>
+</div>
+<form class="px-margin mt-space-md flex flex-col gap-space-md" id="farm-setup-form" onsubmit="event.preventDefault();">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5" for="farmer-name">
+<span class="material-symbols-outlined text-[16px] text-primary">person</span>
+        Farmer Name / किसान का नाम
+      </label>
+<div class="relative">
+<input class="w-full h-14 bg-surface-container-low rounded-xl px-space-md font-body-lg text-body-lg text-on-surface outline-none focus:bg-surface-container-lowest transition-colors" id="farmer-name" type="text" value="Rameshwar Singh"/>
+<span class="material-symbols-outlined absolute right-space-md top-4 text-secondary text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span>
+          Farm Location / खेत का स्थान
+        </label>
+<button class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5 active:opacity-75" type="button">
+<span class="material-symbols-outlined text-[14px]">my_location</span>
+          GPS Calibrate
+        </button>
+</div>
+<div class="relative w-full">
+<input class="w-full h-14 bg-surface-container-low rounded-xl pl-space-md pr-12 font-body-lg text-body-lg text-on-surface outline-none" readonly="" type="text" value="Greater Noida, Uttar Pradesh"/>
+<span class="material-symbols-outlined absolute right-space-md top-4 text-on-surface-variant text-[20px]">edit_location_alt</span>
+</div>
+<div class="relative w-full h-44 rounded-xl overflow-hidden shadow-inner mt-space-xs">
+<div class="w-full h-full bg-cover bg-center" data-location="Greater Noida, Uttar Pradesh" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsLC8upRnSsdj_4BFYgyG-5fXenKqagRIT5vl1h2OXf7uTPUZiQytqX1Gs_J7Alvso8vdyRQ1l84aqgHa57dCE8zYr8VoVIQuZpyyHPRJBIwDsIWYk6bz6htZQCsDJ_3KMiuTHIody46ua8GTD0EdKtVntkzbr03m-98xmQWrm8vosFtHt8Esb-tN-VVd9o5ldKuEsfTAql2IMuGVaF6GMTMJMVMIbCoUwjUjCyePBr1VrSXO6EovU')"></div>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[0.5px] pointer-events-none"></div>
+<div class="absolute inset-3 border-2 border-dashed border-secondary-fixed bg-secondary-fixed/15 rounded-lg flex flex-col items-center justify-between p-2 pointer-events-none">
+<div class="w-full flex justify-between items-center">
+<span class="bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+              Plot #UP-8201
+            </span>
+<span class="bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">
+              Khasra 42/1
+            </span>
+</div>
+<div class="bg-primary-container/90 text-on-primary font-label-md text-label-md px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">crop_free</span>
+<span>2.5 Acres Area Mapped</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">square_foot</span>
+          Farm Area / कुल रकबा
+        </label>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/50 px-2 py-0.5 rounded-md font-bold">Standardized</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 relative">
+<input class="w-full h-14 bg-surface-container-low rounded-xl px-space-md font-display-mobile text-display-mobile text-primary font-bold outline-none" step="0.1" type="number" value="2.5"/>
+</div>
+<div class="flex bg-surface-container-low p-1 rounded-xl gap-1 h-14 items-center">
+<button class="unit-toggle px-3 py-2 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm font-bold transition-all" data-unit="Acres" type="button">Acres</button>
+<button class="unit-toggle px-3 py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" data-unit="Bigha" type="button">Bigha</button>
+<button class="unit-toggle px-3 py-2 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" data-unit="Hectares" type="button">Ha</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">terrain</span>
+          Soil Type / मिट्टी का प्रकार
+        </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to switch</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs" id="soil-selector">
+<button class="soil-card selected flex flex-col text-left p-space-sm rounded-xl bg-primary-container text-on-primary transition-all" data-soil="loamy" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-sm text-headline-sm font-bold">Loamy</span>
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm opacity-90 mt-1">दोमट मिट्टी</span>
+<span class="font-body-sm text-body-sm mt-2 text-primary-fixed bg-primary/40 px-1.5 py-0.5 rounded text-[11px] leading-snug">Optimal moisture &amp; air</span>
+</button>
+<button class="soil-card flex flex-col text-left p-space-sm rounded-xl bg-surface-container-low text-on-surface transition-all" data-soil="clay" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-sm text-headline-sm font-bold">Clay</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/40">radio_button_unchecked</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">चिकनी मिट्टी</span>
+<span class="font-body-sm text-body-sm mt-2 text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded text-[11px] leading-snug">High water holding</span>
+</button>
+<button class="soil-card flex flex-col text-left p-space-sm rounded-xl bg-surface-container-low text-on-surface transition-all" data-soil="sandy" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-sm text-headline-sm font-bold">Sandy</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/40">radio_button_unchecked</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">बलुई मिट्टी</span>
+<span class="font-body-sm text-body-sm mt-2 text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded text-[11px] leading-snug">Quick drainage</span>
+</button>
+<button class="soil-card flex flex-col text-left p-space-sm rounded-xl bg-surface-container-low text-on-surface transition-all" data-soil="alluvial" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-headline-sm text-headline-sm font-bold">Alluvial</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/40">radio_button_unchecked</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">जलोढ़ मिट्टी</span>
+<span class="font-body-sm text-body-sm mt-2 text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded text-[11px] leading-snug">Rich river sediment</span>
+</button>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Recommended: Loamy Soil Profile</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Balanced drainage and moisture retention. Well-suited for Paddy, Maize, Cotton, and Pulses.</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">water_drop</span>
+        Water &amp; Irrigation / सिंचाई के साधन
+      </label>
+<div class="relative">
+<select class="w-full h-14 bg-surface-container-low rounded-xl px-space-md appearance-none font-body-lg text-body-lg text-on-surface outline-none cursor-pointer">
+<option selected="">Canal + Tube well (Medium availability)</option>
+<option>Perennial Canal (High availability)</option>
+<option>Solar Borewell (Reliable 24x7)</option>
+<option>Monsoon Rainfed Only (Zero borewell)</option>
+<option>Drip Irrigation Network</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-4 text-on-surface-variant pointer-events-none text-[24px]">arrow_drop_down</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low p-2 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-secondary">waves</span>
+<span>Average seasonal water table: ~38ft depth (Safe Zone)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">history_edu</span>
+        Previous Season Crop / पिछली फसल
+      </label>
+<div class="relative">
+<input class="w-full h-14 bg-surface-container-low rounded-xl px-space-md font-body-lg text-body-lg text-on-surface outline-none" type="text" value="Wheat (Rabi 2025-26)"/>
+<span class="material-symbols-outlined absolute right-space-md top-4 text-on-surface-variant text-[20px]">grass</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm px-1">
+<span>Soil Nitrogen Depletion: <strong>Low (-8%)</strong></span>
+<span class="text-secondary font-bold">Ready for Legume / Maize</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<label class="font-headline-sm text-headline-sm text-primary font-bold">Farming Goal</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select your primary target for this Kharif cycle</p>
+</div>
+<span class="material-symbols-outlined text-[24px] text-secondary">track_changes</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-xs" id="goals-container">
+<button class="goal-card selected flex flex-col p-space-sm rounded-xl bg-primary-container text-on-primary text-left transition-all relative" data-goal="balanced" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">balance</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed goal-check">check_circle</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold mt-2">Balanced</span>
+<span class="font-body-sm text-body-sm opacity-90 mt-0.5 line-clamp-2 leading-tight">Optimizes profit while preserving soil nitrogen.</span>
+</button>
+<button class="goal-card flex flex-col p-space-sm rounded-xl bg-surface-container-low text-on-surface text-left transition-all relative" data-goal="profit" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">currency_rupee</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/30 goal-check">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold mt-2">Maximum Profit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 leading-tight">Target highest mandi price potential &amp; high-value crops.</span>
+</button>
+<button class="goal-card flex flex-col p-space-sm rounded-xl bg-surface-container-low text-on-surface text-left transition-all relative" data-goal="risk" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/30 goal-check">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold mt-2">Low Risk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 leading-tight">Climate resilient, pest-resistant hybrid varieties.</span>
+</button>
+<button class="goal-card flex flex-col p-space-sm rounded-xl bg-surface-container-low text-on-surface text-left transition-all relative" data-goal="short" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/30 goal-check">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold mt-2">Quick Income</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 leading-tight">60-80 day turnaround (Moong, Urad, Green fodder).</span>
+</button>
+<button class="goal-card flex flex-col p-space-sm rounded-xl bg-surface-container-low text-on-surface text-left transition-all relative" data-goal="water" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">opacity</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/30 goal-check">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold mt-2">Low Water Use</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 leading-tight">Millet, Bajra, and dryland pulse cultivation.</span>
+</button>
+<button class="goal-card flex flex-col p-space-sm rounded-xl bg-surface-container-low text-on-surface text-left transition-all relative" data-goal="soil" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant/30 goal-check">radio_button_unchecked</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold mt-2">Soil Health</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 leading-tight">Green manuring and regenerative carbon buildup.</span>
+</button>
+</div>
+</div>
+</form>
+<div class="fixed bottom-20 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md px-margin py-3 shadow-[0_-6px_20px_rgba(27,67,50,0.12)]">
+<div class="max-w-md mx-auto flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5 overflow-hidden">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse flex-shrink-0"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate" id="summary-chip">
+            2.5 Acres • Loamy Soil • Rabi to Kharif
+          </span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex-shrink-0">Ready</span>
+</div>
+<a class="w-full h-14 bg-primary text-on-primary rounded-full flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-[0.98] transition-all shadow-md" data-path="crop-recommendations" href="#">
+<span>Analyze My Farm</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const soilButtons = document.querySelectorAll('.soil-card');
+    soilButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        soilButtons.forEach(b => {
+          b.classList.remove('selected', 'bg-primary-container', 'text-on-primary');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+          const icon = b.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.innerText = 'radio_button_unchecked';
+            icon.className = 'material-symbols-outlined text-[20px] text-on-surface-variant/40';
+          }
+          const subText = b.querySelectorAll('span')[2];
+          if (subText) {
+            subText.className = 'font-body-sm text-body-sm mt-2 text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded text-[11px] leading-snug';
+          }
+        });
+
+        btn.classList.add('selected', 'bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.innerText = 'check_circle';
+          icon.className = 'material-symbols-outlined text-[20px] text-secondary-fixed';
+        }
+        const subText = btn.querySelectorAll('span')[2];
+        if (subText) {
+          subText.className = 'font-body-sm text-body-sm mt-2 text-primary-fixed bg-primary/40 px-1.5 py-0.5 rounded text-[11px] leading-snug';
+        }
+        updateSummary();
+      });
+    });
+
+    const unitButtons = document.querySelectorAll('.unit-toggle');
+    unitButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        unitButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+        updateSummary();
+      });
+    });
+
+    const goalCards = document.querySelectorAll('.goal-card');
+    goalCards.forEach(card => {
+      card.addEventListener('click', () => {
+        goalCards.forEach(c => {
+          c.classList.remove('selected', 'bg-primary-container', 'text-on-primary');
+          c.classList.add('bg-surface-container-low', 'text-on-surface');
+          const checkIcon = c.querySelector('.goal-check');
+          if (checkIcon) {
+            checkIcon.innerText = 'radio_button_unchecked';
+            checkIcon.className = 'material-symbols-outlined text-[20px] text-on-surface-variant/30 goal-check';
+          }
+          const iconCircle = c.querySelector('span.w-8');
+          if (iconCircle) {
+            iconCircle.className = 'w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center';
+          }
+        });
+
+        card.classList.add('selected', 'bg-primary-container', 'text-on-primary');
+        card.classList.remove('bg-surface-container-low', 'text-on-surface');
+        const checkIcon = card.querySelector('.goal-check');
+        if (checkIcon) {
+          checkIcon.innerText = 'check_circle';
+          checkIcon.className = 'material-symbols-outlined text-[20px] text-secondary-fixed goal-check';
+        }
+        const iconCircle = card.querySelector('span.w-8');
+        if (iconCircle) {
+          iconCircle.className = 'w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center';
+        }
+      });
+    });
+
+    function updateSummary() {
+      const activeUnit = document.querySelector('.unit-toggle.font-bold')?.innerText || 'Acres';
+      const activeSoil = document.querySelector('.soil-card.selected span')?.innerText || 'Loamy';
+      const chip = document.getElementById('summary-chip');
+      if (chip) {
+        chip.textContent = `2.5 ${activeUnit} • ${activeSoil} Soil • Rabi to Kharif`;
+      }
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(27,67,50,0.06)]" data-active-classes="[&amp;_.nav-pill]:bg-secondary-container [&amp;_.nav-pill]:text-on-secondary-container font-label-md text-primary font-bold"><div class="flex items-center justify-around h-20 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">space_dashboard</span></div><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-colors [&amp;_.nav-pill]:bg-secondary-container [&amp;_.nav-pill]:text-on-secondary-container font-label-md text-primary font-bold" data-path="farm-setup" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">landscape</span></div><span class="font-label-sm text-label-sm mt-0.5">Farm</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="crop-recommendations" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">psychiatry</span></div><span class="font-label-sm text-label-sm mt-0.5">Crops</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights-and-market" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">trending_up</span></div><span class="font-label-sm text-label-sm mt-0.5">Insights</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="iot-sensors" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">sensors</span></div><span class="font-label-sm text-label-sm mt-0.5">Sensors</span></a></div></nav></body></html>
